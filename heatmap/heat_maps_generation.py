@@ -5,20 +5,23 @@ matplotlib.use('Agg')
 
 import matplotlib.pyplot as plt
 
-x = list(range(1,101)) #if x points are not mentioned -> (1,2,3,...)
-y = random.randint(100, 300, size= 100)
-data = [{'x' : x_val, 'y': y_val} for x_val, y_val in zip(x,y)]
+x = list(range(1,11)) #if x points are not mentioned -> (1,2,3,...)
+y = random.randint(100, 300, size= 10)
+data = [[],[],[],[],[],[],[],[],[],[]]
+data1 = random.rand(12,12)
+
 y1 = y
 for i in y1:
     i = i/3
 
+fig, ax = plt.subplots()
 
-plt.scatter(x,y, c= y1, cmap= 'Reds') #cmap = Spectral_r
+heatmap = plt.imshow(data1, cmap= 'Spectral_r') #cmap = Spectral_r
 plt.title('Heatmap')
 plt.xlabel('Serial No.')
 plt.ylabel('Temprature')
-plt.colorbar()
+cbar = plt.colorbar(heatmap)
 
-plt.savefig('/Users/doctorflu/Desktop/ML Thesis/heatmap/test1.png')
+plt.savefig('/Users/doctorflu/Desktop/Thesis/Thesis-repo/heatmap/test1.png')
 plt.show()
 sys.stdout.flush()
