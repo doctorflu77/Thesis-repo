@@ -4,13 +4,14 @@ import numpy as np
 from numpy import random 
 matplotlib.use('Agg')
 
+import pandas as pd
 import matplotlib.pyplot as plt
 
-x = np.arange(1,26) #if x points are not mentioned -> (1,2,3,...)
-y = np.arange(25,0, -1) #x & y coords
+x = np.arange(1,251) 
+y = np.arange(250,0, -1) #x & y coords
 min_val = 100
 max_val = 300
-data = random.randint(min_val, max_val, size= (25,25)  )
+data = random.randint(min_val, max_val, size= (250,250)  )
 
 
 fig, ax = plt.subplots()
