@@ -10,7 +10,6 @@ import matplotlib.pyplot as plt
 temp = pd.read_csv('/Users/doctorflu/Desktop/Thesis/sampledata.csv')
 temp.dropna(inplace= True)
 
-x = temp.to_string()
 data = temp.iloc[:, 1:].values
 
 
