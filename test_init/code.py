@@ -22,6 +22,6 @@ plt.ylabel('Y - coord')
 cbar = plt.colorbar(heatmap)
 plt.gca().invert_yaxis()
 
-plt.savefig('/Users/doctorflu/Desktop/Thesis/Thesis-repo/heatmap/test1.png')
+plt.savefig('/Users/doctorflu/Desktop/Thesis/Thesis-repo/heatmap/map1.png')
 plt.show()
 sys.stdout.flush()
